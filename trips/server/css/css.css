@@ -1,0 +1,12 @@
+body{
+    text-align: -webkit-center;
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px saddlebrown;
+}
+
+li {
+    list-style: none;
+}

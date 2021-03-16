@@ -1,0 +1,22 @@
+<html>
+<head>
+<link rel="stylesheet" href="css.css"></link> 
+</head>
+<body>
+
+<h2>Trips - - - - <a href="/add-trip">Add A Trip</a></h2>
+
+<ul>
+{{#tripList}}
+<div>
+<div style="background-image: url({{image}}); width: 400px; height:300px; object-fit:contain">
+<li><h1>{{title}} <br> {{departDate}} till {{returnDate}}</h1></li>
+</div>
+<a href="/remove/{{id}}">remove</a>
+</div>
+{{/tripList}}
+</ul>
+
+</body>
+
+</html>
