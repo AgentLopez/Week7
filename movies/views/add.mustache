@@ -1,0 +1,30 @@
+<html>
+<head>
+</head>
+<body>
+
+<div>
+<a href="/">Home</a>
+<a href="/genre/comedy">Comedy</a>
+<a href="/genre/action">Action</a>
+<a href="/genre/drama">Drama</a>
+</div>
+
+<h2>Add Movie</h2>
+<form method="POST" action="/add-movie">
+<input type="text" placeholder="Movie Title" name="movieTitle" />
+<br><input type="text"  placeholder="Description" name="desc" />
+<br>Genre: <select id="movieGenre" name="movieGenre">
+<option value="action">Action</option>
+<option value="comedy">Comedy</option>
+<option value="drama">Drama</option>
+</select>
+<br><input type="text" placeholder="posterURL" name="posterURL" />
+<br>
+<button>add</button>
+</form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+</head>
+<body>
+<div>
+<a href="/">Home</a>
+<a href="/add">Add Movie</a>
+<a href="/genre/comedy">Comedy</a>
+<a href="/genre/action">Action</a>
+<a href="/genre/drama">Drama</a>
+</div>
+
+<h2>Movies</h2>
+<ul styles="list-style-type: none;">
+{{#movies}}
+<li>
+<a href="/details/{{movieID}}"><img src="{{posterURL}}" height="200px" width="auto"><br>
+{{title}}</a>
+</li>
+{{/movies}}
+</ul>
+
+
+
+</body>
+
+</html>

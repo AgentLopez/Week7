@@ -1,0 +1,43 @@
+<html>
+<head>
+</head>
+<body>
+<div>
+<a href="/">Home</a>
+<a href="/add">Add Movie</a>
+<a href="/genre/comedy">Comedy</a>
+<a href="/genre/action">Action</a>
+<a href="/genre/drama">Drama</a>
+</div>
+
+<h2>Movie Details</h2>
+
+
+
+<br>
+<div style="display: flex;"><div>
+<img src="{{posterURL}}" height="200px" width="auto">
+</div>
+<div>
+<h2>{{title}}</h2><br>
+<p>
+{{description}}
+</p>
+</div>
+</div>
+<br>
+<form method="POST" action="/movies/delete">
+<input type="hidden" name="id" value="{{movieID}}">
+<button>DELETE MOVIE</button
+
+</form>
+
+
+
+
+
+
+
+</body>
+
+</html>
