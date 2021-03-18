@@ -1,18 +1,13 @@
 <html>
 <head>
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<div>
-<a href="/">Home</a>
 
-<a href="/genre/comedy">Comedy</a>
-<a href="/genre/action">Action</a>
-<a href="/genre/drama">Drama</a>
-<a href="/login">Login</a>
-</div>
+{{> menu}}
 
 
-<h2>Movies</h2>
+<h2>{{genre}} Movies</h2>
 <ul>
 {{#movies}}
 <li>

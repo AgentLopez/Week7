@@ -47,7 +47,7 @@ router.post('/add-movie', (req, res) => {
 
     movies.push(newMovie)
 
-    res.redirect('/')
+    res.redirect('/users')
 })
 
 router.get('/remove/:id', (req, res) => {

@@ -63,7 +63,8 @@ router.get('/genre/:genre', (req, res) => {
 
     let moviesGenre = movies.filter((movie) => movie.genre == genre) 
 
-    res.render('genre', {movies: moviesGenre})
+    let pGenre = genre.charAt(0).toUpperCase() + genre.slice(1)
+    res.render('genre', {movies: moviesGenre, genre: pGenre})
 
 })
 

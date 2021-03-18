@@ -1,11 +1,16 @@
 const express = require('express')
 const cors = require('cors')
 const app = express()
+const path = require('path')
 const session = require('express-session')
 const mustacheExpress = require('mustache-express')
 const { v4: uuidv4 } = require('uuid');
-app.engine('mustache', mustacheExpress())
-app.set('views', './views')
+
+const VIEWS_PATH = path.join(__dirname, '/views')
+
+app.use(express.static("css"))
+app.engine('mustache', mustacheExpress(VIEWS_PATH + '/partials', '.mustache'))
+app.set('views', VIEWS_PATH)
 app.set('view engine', 'mustache')
 const indexRouter = require('./routes/index.js')
 const apiRouter = require('./routes/api.js')
