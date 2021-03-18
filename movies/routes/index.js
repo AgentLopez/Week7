@@ -92,13 +92,14 @@ router.post('/register', (req, res) => {
         name: name,
         age: age,
         password: password,
-        creator: uuidv4()
+        creator: uuidv4(),
+        myMovies: []
     }
 
     users.push(newUser)
     console.log(users)
 
-    res.redirect('/')
+    res.redirect('/users')
 })
 
 router.post('/login', (req, res) => {
