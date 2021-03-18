@@ -4,11 +4,12 @@
 <body>
 <div>
 <a href="/">Home</a>
-
+<a href="/add">Add Movie</a>
 <a href="/genre/comedy">Comedy</a>
 <a href="/genre/action">Action</a>
 <a href="/genre/drama">Drama</a>
-<a href="/login">Login</a>
+<a href="/users">Add Movies to Your Collection</a>
+<a href="/logout">Log Out</a>
 </div>
 
 <h2>Movies</h2>
@@ -16,7 +17,7 @@
 {{#movies}}
 <li>
 <a href="/details/{{movieID}}"><img src="{{posterURL}}" height="200px" width="auto"><br>
-{{title}}</a>
+{{title}}</a> <a href="/users/remove/{{movieID}}">Remove from my collection</a>
 </li>
 {{/movies}}
 </ul>
