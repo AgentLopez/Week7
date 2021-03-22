@@ -3,7 +3,7 @@
 ## To Do List
 We've made a to do list a few times now. This time we set up the server side with a NodeJS server. We still had some client side scripting going on as this was early in the week.
 
-![}(images/todo.PNG)
+![](images/todo.PNG)
 
 ## Movies Website
 We had to display movie title, then create a link to show details. This was done with mustache and my first encounter with server sided pages. Learned about views, static resources, routing and sessions.
